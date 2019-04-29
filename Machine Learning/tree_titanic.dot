@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Sex <= 0.5\ngini = 0.472\nsamples = 801\nvalue = [496, 305]"] ;
+1 [label="Pclass <= 2.5\ngini = 0.378\nsamples = 281\nvalue = [71, 210]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 2.5\ngini = 0.098\nsamples = 154\nvalue = [8, 146]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]"] ;
+2 -> 3 ;
+4 [label="gini = 0.088\nsamples = 152\nvalue = [7, 145]"] ;
+2 -> 4 ;
+5 [label="Embarked_S <= 0.5\ngini = 0.5\nsamples = 127\nvalue = [63, 64]"] ;
+1 -> 5 ;
+6 [label="gini = 0.415\nsamples = 51\nvalue = [15, 36]"] ;
+5 -> 6 ;
+7 [label="gini = 0.465\nsamples = 76\nvalue = [48, 28]"] ;
+5 -> 7 ;
+8 [label="Age <= 13.0\ngini = 0.299\nsamples = 520\nvalue = [425, 95]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Pclass <= 2.5\ngini = 0.484\nsamples = 34\nvalue = [14, 20]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 11\nvalue = [0, 11]"] ;
+9 -> 10 ;
+11 [label="gini = 0.476\nsamples = 23\nvalue = [14, 9]"] ;
+9 -> 11 ;
+12 [label="Pclass <= 1.5\ngini = 0.261\nsamples = 486\nvalue = [411, 75]"] ;
+8 -> 12 ;
+13 [label="gini = 0.442\nsamples = 106\nvalue = [71, 35]"] ;
+12 -> 13 ;
+14 [label="gini = 0.188\nsamples = 380\nvalue = [340, 40]"] ;
+12 -> 14 ;
+}
